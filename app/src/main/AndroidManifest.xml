@@ -21,7 +21,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCpjIPLbVLrHwRD7lmWLBzoEy1Y3ucUIig" />
+            android:value="" />
 
         <activity
             android:name=".activities.AnnouncementActivity"

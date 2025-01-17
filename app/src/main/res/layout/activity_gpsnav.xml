@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/color2"
+    tools:context=".activities.GPSNavActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_gps"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/background_oval_sec_top"
+        android:elevation="4dp"
+        app:title=" "
+        app:titleTextColor="#DEDEDE"
+        >
+
+        <!-- Geri düğmesi -->
+        <ImageButton
+            android:id="@+id/toolbarBackButton_gps"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@null"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/arrow_back" />
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:text="GPSNavigation"
+            android:textColor="#DEDEDE"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <com.google.android.gms.maps.MapView-->
+<!--        android:id="@+id/mapView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/background_oval"-->
+<!--        android:contentDescription="mapview"-->
+<!--        android:layout_marginTop="35dp"/>-->
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Arama yapın"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yakınlaştır"
+            android:backgroundTint="@color/secondary"/>
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uzaklaştır"
+            android:backgroundTint="@color/secondary"/>
+
+        <Button
+            android:id="@+id/btnAddMarkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmleçleri Ekle"
+            android:backgroundTint="@color/secondary"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@color/color2">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="25dp"
+
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/secondary"
+                    android:paddingVertical="15dp"
+                    android:text="@string/login_title"
+                    android:textAlignment="center"
+                    android:textColor="#DEDEDE"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/background_oval"
+                android:layout_marginHorizontal="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hru_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_username_tv" />
+
+                    <EditText
+                        android:id="@+id/usernameETxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_radius_style"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:hint="@string/login_username_et"
+                        android:backgroundTint="@color/ET_view_color"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/login_password_tv"
+                        />
+
+                    <EditText
+                        android:id="@+id/passwordEtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:autofillHints="password"
+                        android:background="@drawable/et_radius_style"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:hint="@string/login_password_et"
+                        android:backgroundTint="@color/ET_view_color"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/registerBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/register_btn_color"
+                            android:onClick="clickRegisterBtn"
+                            android:text="@string/login_register_btn"
+                            android:textAllCaps="false"
+                            android:textColor="#F2F2F2" />
+
+                        <Button
+                            android:id="@+id/loginBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#4CAF50"
+                            android:onClick="loginBtn"
+                            android:text="@string/login_login_btn"
+                            android:textAllCaps="false"
+                            android:textColor="#F2F2F2" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Fragment için FrameLayout -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

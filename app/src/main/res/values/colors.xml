@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF8A8A</color>
+    <color name="register_btn_color">#2196F3</color>
+
+
+
+    <color name="primary">#DBDBDB</color>
+    <color name="secondary">#D99309</color>
+    <color name="primary_lightcolor">#E4E4E4</color>
+    <color name="primary_darkcolor">#DBDBDB</color>
+    <color name="color2">#2C3C61</color>
+    <color name="calculator_button">#FFFFFF</color>
+
+    <color name="ET_view_color">#FFFFFF</color>
+
+</resources>

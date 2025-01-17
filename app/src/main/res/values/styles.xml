@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Temalar -->
+    <style name="Theme.MyApp.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Renklerin ayarlanması -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_darkcolor</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:windowBackground">@color/primary_lightcolor</item>
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Butonlar ve diğer UI bileşenleri için renk ayarları -->
+        <item name="colorButtonNormal">@color/calculator_button</item>
+        <item name="android:buttonStyle">@android:style/Widget.Material.Button</item>
+    </style>
+
+</resources>

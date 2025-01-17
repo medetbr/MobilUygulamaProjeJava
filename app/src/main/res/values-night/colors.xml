@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+    <color name="primary">#2C3C61</color>
+    <color name="secondary">#754200</color>
+    <color name="primary_lightcolor">#2C3C61</color>
+    <color name="primary_darkcolor">#2C3C61</color>
+    <color name="color2">#0E1424</color>
+    <color name="calculator_button">#575757</color>
+    <color name="ET_view_color">#0E1424</color>
+
+
+</resources>

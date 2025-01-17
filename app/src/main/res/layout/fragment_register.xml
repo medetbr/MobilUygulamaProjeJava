@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    tools:context=".activities.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="40dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:background="@drawable/background_oval_black"
+        >
+
+        <!-- Başlık ve Çıkış Butonu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_oval_sec_top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fragCloseBTN"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/fragment_description1"
+                android:onClick="goToBackBtn"
+                app:srcCompat="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/fragTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="15dp"
+                android:paddingRight="50dp"
+                android:text="@string/fragment_title"
+                android:textAlignment="center"
+                android:textColor="#DEDEDE"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Form Alanları -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/background_oval_bottom">
+
+            <!-- Ad, Soyad, E-posta, vb. Alanlar -->
+            <TextView
+                android:id="@+id/fragNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/fragment_name_tv" />
+
+            <EditText
+                android:id="@+id/fragNameET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_name_et"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color" />
+
+
+            <TextView
+                android:id="@+id/fragSurnameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_surname_tv" />
+
+            <EditText
+                android:id="@+id/fragSurnameET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_surname_et"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color"
+                />
+
+            <TextView
+                android:id="@+id/fragEmailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_email_tv" />
+
+            <EditText
+                android:id="@+id/fragEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_email_et"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color"
+                />
+
+            <TextView
+                android:id="@+id/fragGSMTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_gsm_tv" />
+
+            <EditText
+                android:id="@+id/fragGSMET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_gsm_et"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color"
+                />
+
+            <TextView
+                android:id="@+id/fragUserNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_username_tv" />
+
+            <EditText
+                android:id="@+id/fragUserNameET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_username_et"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color"
+                />
+
+            <TextView
+                android:id="@+id/fragPassTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_password_tv"
+                />
+
+            <EditText
+                android:id="@+id/fragPassET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_radius_style"
+                android:ems="10"
+                android:hint="@string/fragment_password_et"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ET_view_color"
+                />
+
+            <TextView
+                android:id="@+id/fragHelpTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:text="@string/fragment_help"
+                />
+
+            <Button
+                android:id="@+id/fragRegisterBTN"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/register_btn_color"
+                android:text="@string/fragment_register"
+                android:textAllCaps="false"
+                android:textColor="#F2F2F2"
+                android:layout_gravity="center"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

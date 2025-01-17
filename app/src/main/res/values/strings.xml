@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FinalProje</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- activity_announcement-->
+
+    <!-- activity_calculator-->
+
+    <!-- activity_gps_nav-->
+
+    <!-- activity_home-->
+
+    <!-- activity_login-->
+    <string name="login_title">Giriş Yap</string>
+    <string name="login_username_tv">Okul Numarası:</string>
+    <string name="login_username_et">Okul No</string>
+    <string name="login_password_tv">Şifre</string>
+    <string name="login_password_et">Şifre</string>
+    <string name="login_login_btn">Giriş</string>
+    <string name="login_register_btn">Kayıt</string>
+
+
+    <!-- activity_main-->
+
+    <!-- activity_quick_access-->
+
+    <!-- fragment_register -->
+    <string name="fragment_title">Kayıt Ol</string>
+    <string name="fragment_username_tv">Okul Numarası:</string>
+    <string name="fragment_username_et">Okul Numaranız</string>
+    <string name="fragment_password_tv">Şifre:</string>
+    <string name="fragment_password_et">Şifreniz</string>
+    <string name="fragment_email_tv">E-posta:</string>
+    <string name="fragment_email_et">ornek@ornek.com</string>
+    <string name="fragment_gsm_tv">Telefon Numarası:</string>
+    <string name="fragment_gsm_et">(555)-555-55-55</string>
+    <string name="fragment_name_tv">Ad:</string>
+    <string name="fragment_name_et">Adınız</string>
+    <string name="fragment_surname_tv">Soyad:</string>
+    <string name="fragment_surname_et">Soyadınız </string>
+    <string name="fragment_help">Yardım?</string>
+    <string name="fragment_register">Kayıt Ol</string>
+
+    <string name="fragment_description1">Geri dönmek için tıklayınız</string>
+
+
+</resources>
